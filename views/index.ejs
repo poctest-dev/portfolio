@@ -1,0 +1,73 @@
+
+<html>
+
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="/public/style1.css">
+    
+    </head>
+    
+    <body>
+    
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+    
+                <form >
+                    <h1>Hi, I am Abhijit</h1>
+                    <span> Working as Technical Intern in Consumer Platform Team</span>
+                    <br>
+                    <h4> Happy and Excited to be a part of McAfee family</h4>
+                    <br>
+                    <span> Looking forward to meet you all !</span>
+                    <br>
+                    <span> Ping me at : abhijit_prasun@mcafee.com</span>
+                  
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form >
+                    <h1>Hi, I am Ankita </h1>
+                    <span> Working as Technical Intern in Consumer Platform Team</span>
+                    <br>
+                    <h4> Elated and Delighted to be a part of McAfee family</h4>
+                    <br>
+                    <span> Would love to interact with you all !! </span>
+                    <br>
+                    <span> Ping me at : ankita_juneja@mcafee.com</span>     
+                  
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                       
+                       <img src="../public/robo1.jpg">
+                       <br>
+                        <button class="ghost" id="switchBack">Switch Back</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <img src="../public/robo.jpg">
+                       <br>
+                        <button class="ghost" id="switch">Switch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script type="text/javascript">
+            const signUpButton = document.getElementById('switch');
+            const signInButton = document.getElementById('switchBack');
+            const container = document.getElementById('container');
+    
+            signUpButton.addEventListener('click', () => {
+                container.classList.add("right-panel-active");
+            });
+            signInButton.addEventListener('click', () => {
+                container.classList.remove("right-panel-active");
+            });
+        </script>
+    
+    
+    </body>
+    
+    </html>
